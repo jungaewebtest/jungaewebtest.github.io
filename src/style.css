@@ -20,10 +20,7 @@ a {
     font-size: 2em;
     font-weight: bold;
     color: #fff;
-    text-transform: uppercase; 
-    position:fixed; 
-	top:0; 
-	left:0; 
+    text-transform: uppercase;
 }
 .header-contact {
     margin-top: 10px;
