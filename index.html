@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <title>RE:ACTOR</title>
+</head>
+<body>
+    <div class="header">
+        <p class="header-title">RE:ACTOR</p>
+        <p class="header-contact">This is a collaborated project between Kookmin University and Korea Electronics Technology Institute (KETI).</p>
+    </div>
+    <div class="section-div">
+        <h4>About</h4>
+        <div class="section-content documentation">
+            <ul>
+                <li class="section-title">Motivations</li>
+                <div class="flex-div">
+                    <img src="./public/Motivations.png" alt="MotivationsImg">
+                    <div class="section-text">
+                        <p>Edge computing is a distributed computing system that brings dataset computation to a location closer to the data source.</p>
+                        <p>Edge computing resources are decentralized, and they can be unstable compared to centralized cloud computing resources.</p>
+                        <br>
+                        <p>Kubernetes is a container orchestration platform that provides a highly available container execution environment while providing the fault-tolerance and auto-scaling feature.</p>
+                        <p>Thus, managing relatively unstable edge computing resources using Kubernetes is widely adopted.</p>
+                        <br>
+                        <p>However, the current Kubernetes supports only limited hardware information, and it can limit the scheduling efficiency in an edge-computing environment.</p>
+                        <p>To enrich detailed hardware information provided by Kubernetes, we implemented edge accelerator device monitoring module for Kubernetes.</p>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <li class="section-title">Implementation</li>
+                <div class="flex-div">
+                    <img src="./public/implementation_image1.png" alt="">
+                    <div class="section-text">
+                        <p>The system was implemented using real devices NVIDIA TX1, TX2, Nano, Xavier, and Google Coral tpu with Raspberry Pi 4.</p>
+                        <p>The module for the auto accelerator detector used the hardware information extractor container image.</p>
+                        <p>And deployed an auto-detector container using Daemonset and used ServiceAccount to automatically label hardware information.</p>
+                    </div>
+                </div>
+                <div class="flex-div" style="border: none;">
+                    <img src="./public/implementation_image3.png" alt="">
+                    <div class="section-text">
+                        <p>Hardware driver version, model name, and resource information were extracted through commands and files, and it is automatically labeled and displayed like this.</p>
+                    </div>
+                </div>
+            </ul>
+            <ul>
+                <li class="section-title">Future Work</li>
+                <div class="flex-div">
+                    <img src="./public/futer_work_image.png" alt="">
+                    <div class="section-text">
+                        <p>The project was able to extract hardware information by developing the current hardware monitor module, and will develop a workload character analysis module to characterize workloads such as DNN inference.</p>
+                        <br>
+                        <p>Therefore, it will reduce the workload by improving the existing limited scheduling function.</p>
+                        <p>So, it can cover various workloads, and will measure and compare the performance.</p>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Publication</h4>
+        <div class="section-content">
+            <a class="publication-link" href="https://github.com/kmueamonitor/edge-accelerator-monitor-web/raw/main/public/Accelerator-Aware%20Kubernetes%20Scheduler%20for%20DNN%20Tasks%20on%20Edge%20Computing%20Environment.pdf">Accelerator-Aware Kubernetes Scheduler for DNN Tasks on Edge Computing Environment</a>
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Demo Video</h4>
+        <div class="section-content video-section">
+            <div class="video-div">
+                <div class="video-title english-demo-title"><p>ENGLISH </p><a href="https://youtu.be/0RmM_pjYL1Y">[Youtube URL]</a></div>
+                <iframe width="100%" height="400"
+                        src="https://www.youtube-nocookie.com/embed/0RmM_pjYL1Y"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-div">
+                <div class="video-title"><p>KOREAN </p><a href="https://youtu.be/UkdAr9renxQ">[Youtube URL]</a></div>
+                <iframe width="100%" height="400"
+                        src="https://www.youtube-nocookie.com/embed/UkdAr9renxQ"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="section-div">
+        <h4>Source code & Docker image</h4>
+        <ul>
+            <li>Github URL : <a href="https://github.com/kmu-bigdata/edge-accelerator-monitor">https://github.com/kmu-bigdata/edge-accelerator-monitor</a></li>
+            <li>Dockerhub URL : <a href="https://hub.docker.com/r/kmubigdata/edge-accelerator-monitor">https://hub.docker.com/r/kmubigdata/edge-accelerator-monitor</a></li>
+        </ul>
+    </div>
+    <Footer>
+        <h5>KOOKMIN UNIVERSITY</h5>
+    </Footer>
+</body>
+</html>
