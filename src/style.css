@@ -26,7 +26,8 @@ a {
 	top:0; 
 	left:0;
 }
-.header-contact {
+.header-contact 
+    position:fixed;
     margin-top: 10px;
     font-size: 16px;
     color: #fff;
