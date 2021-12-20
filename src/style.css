@@ -28,6 +28,8 @@ a {
 }
 .menu li{
     float:left;
+}
+.menu a{
     line-height: 50px;
     padding: 0 15px;
     display: block;
