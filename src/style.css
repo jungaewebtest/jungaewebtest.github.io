@@ -36,7 +36,6 @@ a {
     color: #fff;
 }
 .section-div {
-    font-size: 1.4em;
     width: 90%;
     margin: 0 5% 50px 5%;
     padding-bottom: 30px;
@@ -44,6 +43,10 @@ a {
 }
 h4 {
     font-size: 2.2em;
+}
+.section-div h4 {
+    font-size: 1.4em;
+
 }
 .section-div h5 {
 }
