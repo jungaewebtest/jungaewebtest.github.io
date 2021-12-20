@@ -37,9 +37,16 @@
                 <div class="flex-div">
                     <img src="./public/implementation_image1.png" alt="">
                     <div class="section-text">
-                        <p>The system was implemented using real devices NVIDIA TX1, TX2, Nano, Xavier, and Google Coral tpu with Raspberry Pi 4.</p>
-                        <p>The module for the auto accelerator detector used the hardware information extractor container image.</p>
-                        <p>And deployed an auto-detector container using Daemonset and used ServiceAccount to automatically label hardware information.</p>
+                        <p>Accelerator Information Extraction Module (as a container image)</p>
+                        <br>
+                        <p>Covers devices from NVIDIA Jetson TX1, TX2, Nano, Xavier,and Google Coral TPU with ARM64 architecture.</p>
+                        <p>DaemonSet (Kubernetes feature)</p>
+                        <br>
+                        <p>Automatic accelerator detection container image distribution upon a node join a cluster.</p>
+                        <br>
+                        <p>Service Account (Kubernetes feature)</p>
+                        <br>
+                        <p>Grant permissions for automatic labelling from a node</p>
                     </div>
                 </div>
                 <div class="flex-div" style="border: none;">
