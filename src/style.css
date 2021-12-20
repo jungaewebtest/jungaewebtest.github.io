@@ -36,6 +36,7 @@ a {
     color: #fff;
 }
 .section-div {
+    font-size: 1.4em;
     width: 90%;
     margin: 0 5% 50px 5%;
     padding-bottom: 30px;
@@ -96,7 +97,7 @@ ul li {
     width: 95%;
     padding-left: 5%;
     font-size: 1.4em;
-    color: #000;
+    color: #191970;
 }
 .video-section {
     display: flex;
