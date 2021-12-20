@@ -21,17 +21,17 @@ a {
     font-weight: bold;
     color: #fff;
     text-transform: none;
-    line-height: 75px;
+    line-height: 50px;
     position:fixed; 
 	top:0; 
 	left:0;
 }
 .menu li{
     float:left;
-    line-height: 75px;
+    line-height: 50px;
     padding: 0 15px;
     display: block;
-    color: #fff;
+    color: white;
 }
 .section-div {
     width: 90%;
